@@ -128,6 +128,10 @@ a{color:#3b9adb;}
   color: #99979c;
   text-align: center;
   background-color: #2a2730;
+  position: relative;
+}
+.bs-docs-footer h5{
+  text-align: center;
 }
 .bs-docs-footer a {
   color: #fff;
@@ -151,7 +155,9 @@ a{color:#3b9adb;}
     margin-bottom: 0;
   }
 }
-
+.qrcode{
+  background: red; 
+}
 .modal-dialog{
   width: 300px;
 }
