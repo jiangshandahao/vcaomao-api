@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)tutorial.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>教程 | React</title>
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:title" content="教程 | React">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="docs/tutorial.html">
+  <meta property="og:image" content="img/logo_og.png">
+  <meta property="og:description" content="用于构建用户界面的Javascript库">
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="./tutorial_files/syntax.css">
+  <link rel="stylesheet" href="./tutorial_files/codemirror.css">
+  <link rel="stylesheet" href="./tutorial_files/react.css">
+
+  <!--[if lte IE 8]>
+  <script type="text/javascript" src="/react/js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-shim.min.js"></script>
+  <script type="text/javascript" src="/react/js/es5-sham.min.js"></script>
+  <![endif]-->
+  <script src="./tutorial_files/hm.js"></script><script type="text/javascript" src="./tutorial_files/codemirror.js"></script>
+  <script type="text/javascript" src="./tutorial_files/javascript.js"></script>
+  <script type="text/javascript" src="./tutorial_files/react.js"></script>
+  <script type="text/javascript" src="./tutorial_files/JSXTransformer.js"></script>
+  <script type="text/javascript" src="./tutorial_files/live_editor.js"></script>
+  <script type="text/javascript" src="./tutorial_files/showdown.js"></script>
+  
+
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="nav-main">
+      <div class="wrap">
+        <a class="nav-home" href="index.html">
+          <img class="nav-logo" src="./tutorial_files/logo.svg" width="36" height="36">
+          React
+        </a>
+        <ul class="nav-site">
+          <li><a href="getting-started.html" class="active">文档</a></li>
+          <li><a href="http://react-china.org/" target="_blank">中文社区</a>
+          </li><li><a href="downloads.html">下载</a></li>
+          <!-- <li><a href="/react/blog/">博客</a></li> -->
+          <li><a href="https://github.com/reactjs-cn/react-docs">github</a>
+          </li><li><a href="about.html">关于我们</a>
+        </li></ul>
+      </div>
+    </div>
+
+    
+
+    <section class="content wrap documentationContent">
+  <div class="nav-docs">
+  <!-- Docs Nav -->
+  
+    <div class="nav-docs-section">
+      <h3>快速入门</h3>
+      <ul>
+        
+          <li>
+            <a href="getting-started.html">快速开始</a>
+            
+          </li>
+        
+          <li>
+            <a href="tutorial.html" class="active">教程</a>
+            
+          </li>
+        
+          <li>
+            <a href="thinking-in-react.html">深入理解React</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>指南</h3>
+      <ul>
+        
+          <li>
+            <a href="why-react.html">为什么使用 React?</a>
+            
+          </li>
+        
+          <li>
+            <a href="displaying-data.html">数据呈现</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="jsx-in-depth.html">深入理解JSX</a>
+                  </li>
+                
+                  <li>
+                    <a href="jsx-spread.html">JSX的延展属性</a>
+                  </li>
+                
+                  <li>
+                    <a href="jsx-gotchas.html">JSX的陷阱</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="interactivity-and-dynamic-uis.html">富交互性的动态用户界面</a>
+            
+          </li>
+        
+          <li>
+            <a href="multiple-components.html">复合组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="reusable-components.html">可复用组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="transferring-props.html">传递 Props</a>
+            
+          </li>
+        
+          <li>
+            <a href="forms.html">表单组件</a>
+            
+          </li>
+        
+          <li>
+            <a href="working-with-the-browser.html">浏览器中的工作原理</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="more-about-refs.html">关于Refs的更多内容</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li>
+            <a href="tooling-integration.html">Tooling Integration</a>
+            
+          </li>
+        
+          <li>
+            <a href="addons.html">插件</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="animation.html">动画</a>
+                  </li>
+                
+                  <li>
+                    <a href="two-way-binding-helpers.html">双向绑定</a>
+                  </li>
+                
+                  <li>
+                    <a href="class-name-manipulation.html">类名操作</a>
+                  </li>
+                
+                  <li>
+                    <a href="test-utils.html">测试工具集</a>
+                  </li>
+                
+                  <li>
+                    <a href="clone-with-props.html">克隆组件</a>
+                  </li>
+                
+                  <li>
+                    <a href="update.html">Immutability Helpers</a>
+                  </li>
+                
+                  <li>
+                    <a href="pure-render-mixin.html">PureRenderMixin</a>
+                  </li>
+                
+                  <li>
+                    <a href="perf.html">性能分析工具</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>社区资源</h3>
+      <ul>
+        
+          <li>
+            <a href="videos.html">视频</a>
+            
+          </li>
+        
+          <li>
+            <a href="complementary-tools.html">其余工具</a>
+            
+          </li>
+        
+          <li>
+            <a href="examples.html">范例</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>参考</h3>
+      <ul>
+        
+          <li>
+            <a href="top-level-api.html">顶层 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="component-api.html">组件 API</a>
+            
+          </li>
+        
+          <li>
+            <a href="component-specs.html">组件的详细说明和生命周期（Component Specs and Lifecycle）</a>
+            
+          </li>
+        
+          <li>
+            <a href="tags-and-attributes.html">标签和属性支持</a>
+            
+          </li>
+        
+          <li>
+            <a href="events.html">事件系统</a>
+            
+          </li>
+        
+          <li>
+            <a href="dom-differences.html">与 DOM 的差异</a>
+            
+          </li>
+        
+          <li>
+            <a href="special-non-dom-attributes.html">特殊的非 DOM 属性</a>
+            
+          </li>
+        
+          <li>
+            <a href="reconciliation.html">Reconciliation</a>
+            
+          </li>
+        
+          <li>
+            <a href="glossary.html">React （虚拟）DOM 术语</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+    <div class="nav-docs-section">
+      <h3>Flux</h3>
+      <ul>
+        
+          <li>
+            <a href="flux-overview.html">Flux概述</a>
+            
+          </li>
+        
+          <li>
+            <a href="flux-todo-list.html">Flux的TodoMVC教程</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  <!-- Tips Nav -->
+  
+    <div class="nav-docs-section">
+      <h3>Tips</h3>
+      <ul>
+        
+          <li>
+            <a href="introduction.html">内容简介</a>
+          </li>
+        
+          <li>
+            <a href="inline-styles.html">内联样式</a>
+          </li>
+        
+          <li>
+            <a href="if-else-in-JSX.html">JSX 中的 If-Else</a>
+          </li>
+        
+          <li>
+            <a href="self-closing-tag.html">自闭合标签</a>
+          </li>
+        
+          <li>
+            <a href="maximum-number-of-jsx-root-nodes.html">JSX 根节点的最大数量</a>
+          </li>
+        
+          <li>
+            <a href="style-props-value-px.html">在样式props中快速制定像素值</a>
+          </li>
+        
+          <li>
+            <a href="children-props-type.html">子props的类型</a>
+          </li>
+        
+          <li>
+            <a href="controlled-input-null-value.html">值为 null 的 Controlled Input</a>
+          </li>
+        
+          <li>
+            <a href="componentWillReceiveProps-not-triggered-after-mounting.html">Mounting 后 componentWillReceiveProps 未被触发</a>
+          </li>
+        
+          <li>
+            <a href="props-in-getInitialState-as-anti-pattern.html">getInitialState 里的 Props 是一个反模式</a>
+          </li>
+        
+          <li>
+            <a href="dom-event-listeners.html">组件的 DOM 事件监听</a>
+          </li>
+        
+          <li>
+            <a href="initial-ajax.html">通过 AJAX 加载初始数据</a>
+          </li>
+        
+          <li>
+            <a href="false-in-jsx.html">JSX 的 false 处理</a>
+          </li>
+        
+          <li>
+            <a href="communicate-between-components.html">组件间的通信</a>
+          </li>
+        
+          <li>
+            <a href="expose-component-functions.html">Expose Component Functions</a>
+          </li>
+        
+          <li>
+            <a href="references-to-components.html">组件的引用</a>
+          </li>
+        
+          <li>
+            <a href="children-undefined.html">this.props.children undefined</a>
+          </li>
+        
+          <li>
+            <a href="use-react-with-other-libraries.html">与其他类库并行使用React</a>
+          </li>
+        
+          <li>
+            <a href="dangerously-set-inner-html.html">Dangerously Set innerHTML</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+</div>
+
+
+  <div class="inner-content">
+    <h1>
+      教程
+      <a class="edit-page-link" href="https://github.com/facebook/react/tree/master/docs/docs/tutorial.md" target="_blank">Edit on GitHub</a>
+    </h1>
+    <div class="subHeader"></div>
+
+    <p>我们将构建一个简单却真实的评论框，你可以将它放入你的博客，类似disqus、livefyre、facebook提供的实时评论的基础版。</p>
+
+<p>我们将提供以下内容：</p>
+
+<ul>
+<li>一个展示所有评论的视图</li>
+<li>一个提交评论的表单</li>
+<li>用于构建自定制后台的接口链接（hooks）</li>
+</ul>
+
+<p>同时也包含一些简洁的特性：</p>
+
+<ul>
+<li><strong>评论体验优化：</strong> 评论在保存到服务器之前就展现在评论列表，因此用户体验很快。</li>
+<li><strong>实时更新：</strong> 其他用户的评论将会实时展示。</li>
+<li><strong>Markdown格式：</strong> 用户可以使用MarkDown格式来编辑文本。</li>
+</ul>
+<h3><a class="anchor" name=""></a>想要跳过所有的内容，只查看源代码？ <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p><a href="https://github.com/reactjs/react-tutorial">所有代码都在GitHub。</a></p>
+<h3><a class="anchor" name=""></a><a class="anchor" name="running-a-server"></a>运行一个服务器 <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>虽然它不是入门教程的必需品，但接下来我们会添加一个功能，发送 <code>POST</code> ing请求到服务器。如果这是你熟知的事并且你想创建你自己的服务器，那么就这样干吧。而对于另外的一部分人，为了让你集中精力学习，而不用担忧服务器端方面，我们已经用了以下一系列的语言编写了简单的服务器代码 - JavaScript（使用Node.js），Python和Ruby。所有代码都在GitHub。你可以<a href="ttps://github.com/reactjs/react-tutorial/">查看代码</a>或者<a href="https://github.com/reactjs/react-tutorial/archive/master.zip">下载 zip 文件</a>来开始学习。</p>
+
+<p>开始使用下载的教程，只需开始编辑 <code>public/index.html</code> 。</p>
+<h3><a class="anchor" name=""></a>开始学习 <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>在这个教程里面，我们将使用放在 CDN 上预构建好的 JavaScript 文件。打开你最喜欢的编辑器，创建一个新的 HTML 文档：</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- index.html --&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello React<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://fb.me/react-0.13.0.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://fb.me/JSXTransformer-0.13.0.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://code.jquery.com/jquery-1.10.0.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"content"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/jsx"</span><span class="nt">&gt;</span>
+      <span class="c1">// Your code here</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>在本教程其余的部分，我们将在此 script 标签中编写我们的 JavaScript 代码。</p>
+
+<blockquote>
+<p>注意：</p>
+
+<p>因为我们想简化 ajax 请求代码，所以在这里引入 jQuery，但是它对 React 并不是必须的。</p>
+</blockquote>
+<h3><a class="anchor" name=""></a>你的第一个组件 <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>React 中全是模块化、可组装的组件。以我们的评论框为例，我们将有如下的组件结构：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">- CommentBox
+  - CommentList
+    - Comment
+  - CommentForm
+</code></pre></div>
+<p>让我们构造 <code>CommentBox</code> 组件，它只是一个简单的 <code>&lt;div&gt;</code> 而已：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial1.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+        <span class="nx">Hello</span><span class="p">,</span> <span class="nx">world</span><span class="o">!</span> <span class="nx">I</span> <span class="nx">am</span> <span class="nx">a</span> <span class="nx">CommentBox</span><span class="p">.</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+<span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">CommentBox</span> <span class="o">/&gt;</span><span class="p">,</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'content'</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div><h4><a class="anchor" name="jsx"></a>JSX语法 <a class="hash-link" href="tutorial.html#jsx">#</a></h4>
+<p>首先你注意到 JavaScript 代码中 XML 式的语法语句。我们有一个简单的预编译器，用于将这种语法糖转换成纯的 JavaScript 代码：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial1-raw.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span><span class="nx">displayName</span><span class="o">:</span> <span class="s1">'CommentBox'</span><span class="p">,</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'div'</span><span class="p">,</span> <span class="p">{</span><span class="nx">className</span><span class="o">:</span> <span class="s2">"commentBox"</span><span class="p">},</span>
+        <span class="s2">"Hello, world! I am a CommentBox."</span>
+      <span class="p">)</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+<span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+  <span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">CommentBox</span><span class="p">,</span> <span class="kc">null</span><span class="p">),</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'content'</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div>
+<p>JSX 语法是可选的，但是我们发现 JSX 语句比纯 JavaScript 更加容易使用。阅读更多关于<a href="jsx-in-depth.html">JSX 语法的文章</a>。</p>
+<h4><a class="anchor" name=""></a>发生了什么 <a class="hash-link" href="tutorial.html#">#</a></h4>
+<p>我们通过 JavaScript 对象传递一些方法到 <code>React.createClass()</code> 来创建一个新的React组件。其中最重要的方法是 <code>render</code>，该方法返回一颗 React 组件树，这棵树最终将会渲染成 HTML。</p>
+
+<p>这个 <code>&lt;div&gt;</code> 标签不是真实的DOM节点；他们是 React <code>div</code> 组件的实例。你可以认为这些就是React知道如何处理的标记或者一些数据。React 是<strong>安全的</strong>。我们不生成 HTML 字符串，因此默认阻止了 XSS 攻击。</p>
+
+<p>你没有必要返回基本的 HTML。你可以返回一个你（或者其他人）创建的组件树。这就使得 React 变得<strong>组件化</strong>：一个关键的前端维护原则。</p>
+
+<p><code>React.render()</code> 实例化根组件，启动框架，注入标记到原始的 DOM 元素中，作为第二个参数提供。</p>
+<h2><a class="anchor" name=""></a>制作组件 <a class="hash-link" href="tutorial.html#">#</a></h2>
+<p>让我们为 <code>CommentList</code> 和 <code>CommentForm</code> 构建骨架，这也会是一些简单的 <code>&lt;div&gt;</code> ：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial2.js</span>
+<span class="kd">var</span> <span class="nx">CommentList</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentList"</span><span class="o">&gt;</span>
+        <span class="nx">Hello</span><span class="p">,</span> <span class="nx">world</span><span class="o">!</span> <span class="nx">I</span> <span class="nx">am</span> <span class="nx">a</span> <span class="nx">CommentList</span><span class="p">.</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">CommentForm</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentForm"</span><span class="o">&gt;</span>
+        <span class="nx">Hello</span><span class="p">,</span> <span class="nx">world</span><span class="o">!</span> <span class="nx">I</span> <span class="nx">am</span> <span class="nx">a</span> <span class="nx">CommentForm</span><span class="p">.</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>下一步，更新 <code>CommentBox</code> 组件，使用这些新的组件：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial3.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+<span class="hll">        <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">CommentList</span> <span class="o">/&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">CommentForm</span> <span class="o">/&gt;</span>
+</span>      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>注意我们是如何混合 HTML 标签和我们创建的组件。HTML 组件就是普通的 React 组件，就像你定义的一样，只有一点不一样。JSX 编译器会自动重写 HTML 标签为 <code>React.createElement(tagName)</code> 表达式，其它什么都不做。这是为了避免全局命名空间污染。</p>
+<h3><a class="anchor" name=""></a>组件属性 <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>让我们创建我们的第三个组件，<code>Comment</code>。我们想传递给它作者名字和评论文本，以便于我们能够对每一个独立的评论重用相同的代码。首先让我们添加一些评论到 <code>CommentList</code>：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial4.js</span>
+<span class="kd">var</span> <span class="nx">CommentList</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentList"</span><span class="o">&gt;</span>
+<span class="hll">        <span class="o">&lt;</span><span class="nx">Comment</span> <span class="nx">author</span><span class="o">=</span><span class="s2">"Pete Hunt"</span><span class="o">&gt;</span><span class="nx">This</span> <span class="nx">is</span> <span class="nx">one</span> <span class="nx">comment</span><span class="o">&lt;</span><span class="err">/Comment&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">Comment</span> <span class="nx">author</span><span class="o">=</span><span class="s2">"Jordan Walke"</span><span class="o">&gt;</span><span class="nx">This</span> <span class="nx">is</span> <span class="o">*</span><span class="nx">another</span><span class="o">*</span> <span class="nx">comment</span><span class="o">&lt;</span><span class="err">/Comment&gt;</span>
+</span>      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>请注意，我们已经从父节点 <code>CommentList</code> 组件传递给子节点 <code>Comment</code> 组件一些数据。例如，我们传递了 <em>Pete Hunt</em> （通过一个属性）和 <em>This is one comment * （通过类似于XML的子节点）给第一个 <code>Comment</code>。从父节点传递到子节点的数据称为 *</em>props**，是属性（properties）的缩写。</p>
+<h3><a class="anchor" name="props"></a>使用props <a class="hash-link" href="tutorial.html#props">#</a></h3>
+<p>让我们创建评论组件。通过 <strong>props</strong>，就能够从中读取到从 <code>CommentList</code> 传递过来的数据，然后渲染一些标记：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial5.js</span>
+<span class="kd">var</span> <span class="nx">Comment</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"comment"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h2</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentAuthor"</span><span class="o">&gt;</span>
+          <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">author</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="err">/h2&gt;</span>
+        <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">children</span><span class="p">}</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>在 JSX 中通过将 JavaScript 表达式放在大括号中（作为属性或者子节点），你可以生成文本或者 React 组件到节点树中。我们访问传递给组件的命名属性作为 <code>this.props</code> 的键，任何内嵌的元素作为 <code>this.props.children</code>。</p>
+<h3><a class="anchor" name="-markdown"></a>添加 Markdown <a class="hash-link" href="tutorial.html#-markdown">#</a></h3>
+<p>Markdown 是一种简单的格式化内联文本的方式。例如，用星号包裹文本将会使其强调突出。</p>
+
+<p>首先，添加第三方的 <strong>Showdown</strong> 库到你的应用。这是一个JavaScript库，处理 Markdown 文本并且转换为原始的 HTML。这需要在你的头部添加一个 script 标签（我们已经在 React 操练场上包含了这个标签）：</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- index.html --&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Hello React<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://fb.me/react-0.13.0.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://fb.me/JSXTransformer-0.13.0.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://code.jquery.com/jquery-1.10.0.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="hll">  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span><span class="nt">&lt;/head&gt;</span>
+</code></pre></div>
+<p>下一步，让我们转换评论文本为 Markdown 格式，然后输出它：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial6.js</span>
+<span class="hll"><span class="kd">var</span> <span class="nx">converter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Showdown</span><span class="p">.</span><span class="nx">converter</span><span class="p">();</span>
+</span><span class="kd">var</span> <span class="nx">Comment</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"comment"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h2</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentAuthor"</span><span class="o">&gt;</span>
+          <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">author</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="err">/h2&gt;</span>
+<span class="hll">        <span class="p">{</span><span class="nx">converter</span><span class="p">.</span><span class="nx">makeHtml</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">children</span><span class="p">.</span><span class="nx">toString</span><span class="p">())}</span>
+</span>      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>我们在这里唯一需要做的就是调用 Showdown 库。我们需要把<code>this.props.children</code>从 React 的包裹文本转换成 Showdown 能处理的原始的字符串，所以我们显示地调用了<code>toString()</code>。</p>
+
+<p>但是这里有一个问题！我们渲染的评论在浏览器里面看起来像这样：“<code>&lt;p&gt;</code>This is <code>&lt;em&gt;</code>another<code>&lt;/em&gt;</code> comment<code>&lt;/p&gt;</code>”。我们想这些标签真正地渲染成 HTML。</p>
+
+<p>那是 React 在保护你免受 XSS 攻击。这里有一种方法解决这个问题，但是框架会警告你别使用这种方法：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial7.js</span>
+<span class="kd">var</span> <span class="nx">converter</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Showdown</span><span class="p">.</span><span class="nx">converter</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">Comment</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="hll">    <span class="kd">var</span> <span class="nx">rawMarkup</span> <span class="o">=</span> <span class="nx">converter</span><span class="p">.</span><span class="nx">makeHtml</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">children</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+</span>    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"comment"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h2</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentAuthor"</span><span class="o">&gt;</span>
+          <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">author</span><span class="p">}</span>
+        <span class="o">&lt;</span><span class="err">/h2&gt;</span>
+<span class="hll">        <span class="o">&lt;</span><span class="nx">span</span> <span class="nx">dangerouslySetInnerHTML</span><span class="o">=</span><span class="p">{{</span><span class="nx">__html</span><span class="o">:</span> <span class="nx">rawMarkup</span><span class="p">}}</span> <span class="o">/&gt;</span>
+</span>      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>这是一个特殊的 API，故意让插入原始的 HTML 变得困难，但是对于 Showdown，我们将利用这个后门。</p>
+
+<p><strong>记住：</strong> 使用这个功能，你会依赖于 Showdown 的安全性。</p>
+<h3><a class="anchor" name=""></a>接入数据模型 <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>到目前为止，我们已经在源代码里面直接插入了评论数据。相反，让我们渲染一小块JSON数据到评论列表。最终，数据将会来自服务器，但是现在，写在你的源代码中：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial8.js</span>
+<span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span><span class="nx">author</span><span class="o">:</span> <span class="s2">"Pete Hunt"</span><span class="p">,</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">"This is one comment"</span><span class="p">},</span>
+  <span class="p">{</span><span class="nx">author</span><span class="o">:</span> <span class="s2">"Jordan Walke"</span><span class="p">,</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">"This is *another* comment"</span><span class="p">}</span>
+<span class="p">];</span>
+</code></pre></div>
+<p>我们需要用一种模块化的方式将数据传入到 <code>CommentList</code>。修改 <code>CommentBox</code> 和 <code>React.render()</code> 方法，通过 props 传递数据到 <code>CommentList</code>：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial9.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+<span class="hll">        <span class="o">&lt;</span><span class="nx">CommentList</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">data</span><span class="p">}</span> <span class="o">/&gt;</span>
+</span>        <span class="o">&lt;</span><span class="nx">CommentForm</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+<span class="hll">  <span class="o">&lt;</span><span class="nx">CommentBox</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="nx">data</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">,</span>
+</span>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'content'</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div>
+<p>现在数据在 <code>CommentList</code> 中可用了，让我们动态地渲染评论：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial10.js</span>
+<span class="kd">var</span> <span class="nx">CommentList</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="hll">    <span class="kd">var</span> <span class="nx">commentNodes</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">comment</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="hll">      <span class="k">return</span> <span class="p">(</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">Comment</span> <span class="nx">author</span><span class="o">=</span><span class="p">{</span><span class="nx">comment</span><span class="p">.</span><span class="nx">author</span><span class="p">}</span><span class="o">&gt;</span>
+</span><span class="hll">          <span class="p">{</span><span class="nx">comment</span><span class="p">.</span><span class="nx">text</span><span class="p">}</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="err">/Comment&gt;</span>
+</span><span class="hll">      <span class="p">);</span>
+</span><span class="hll">    <span class="p">});</span>
+</span>    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentList"</span><span class="o">&gt;</span>
+<span class="hll">        <span class="p">{</span><span class="nx">commentNodes</span><span class="p">}</span>
+</span>      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>就是这样！</p>
+<h3><a class="anchor" name=""></a>从服务器获取数据 <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>让我们用一些从服务器获取的动态数据替换硬编码的数据。我们将移除数据属性，用获取数据的URL来替换它：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial11.js</span>
+<span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+<span class="hll">  <span class="o">&lt;</span><span class="nx">CommentBox</span> <span class="nx">url</span><span class="o">=</span><span class="s2">"comments.json"</span> <span class="o">/&gt;</span><span class="p">,</span>
+</span>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'content'</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div>
+<p>这个组件和前面的组件是不一样的，因为它必须重新渲染自己。该组件将不会有任何数据，直到请求从服务器返回，此时该组件或许需要渲染一些新的评论。</p>
+<h3><a class="anchor" name="reactive-state"></a>响应状态变化（Reactive state） <a class="hash-link" href="tutorial.html#reactive-state">#</a></h3>
+<p>到目前为止，每一个组件都根据自己的 props 渲染了自己一次。<code>props</code> 是不可变的：它们从父节点传递过来，被父节点“拥有”。为了实现交互，我们给组件引进了可变的 <strong>state</strong>。<code>this.state</code> 是组件私有的，可以通过调用 <code>this.setState()</code> 来改变它。当状态更新之后，组件重新渲染自己。</p>
+
+<p><code>render()</code> methods are written declaratively as functions of <code>this.props</code> and <code>this.state</code>. 框架确保UI始终和输入保持一致。</p>
+
+<p>当服务器获取数据的时候，我们将会用已有的数据改变评论。让我们给 <code>CommentBox</code> 组件添加一个评论数组作为它的状态：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial12.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+<span class="hll">  <span class="nx">getInitialState</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class="hll">    <span class="k">return</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="p">[]};</span>
+</span><span class="hll">  <span class="p">},</span>
+</span>  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+<span class="hll">        <span class="o">&lt;</span><span class="nx">CommentList</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">}</span> <span class="o">/&gt;</span>
+</span>        <span class="o">&lt;</span><span class="nx">CommentForm</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>getInitialState()</code>在组件的生命周期中仅执行一次，设置组件的初始化状态。</p>
+<h4><a class="anchor" name=""></a>更新状态 <a class="hash-link" href="tutorial.html#">#</a></h4>
+<p>当组件第一次创建的时候，我们想从服务器获取（使用GET方法）一些JSON数据，更新状态，反映出最新的数据。在真实的应用中，这将会是一个动态功能点，但是对于这个例子，我们将会使用一个静态的JSON文件来使事情变得简单：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial13.json</span>
+<span class="p">[</span>
+  <span class="p">{</span><span class="s2">"author"</span><span class="o">:</span> <span class="s2">"Pete Hunt"</span><span class="p">,</span> <span class="s2">"text"</span><span class="o">:</span> <span class="s2">"This is one comment"</span><span class="p">},</span>
+  <span class="p">{</span><span class="s2">"author"</span><span class="o">:</span> <span class="s2">"Jordan Walke"</span><span class="p">,</span> <span class="s2">"text"</span><span class="o">:</span> <span class="s2">"This is *another* comment"</span><span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>我们将会使用jQuery帮助发出一个一步的请求到服务器。</p>
+
+<p>注意：因为这会变成一个AJAX应用，你将会需要使用一个web服务器来开发你的应用，而不是一个放置在你的文件系统上面的一个文件。<a href="tutorial.html#running-a-server">如上所述</a>，我们已经在<a href="https://github.com/reactjs/react-tutorial/">GitHub</a>上面提供了几个你可以使用的服务器。这些服务器提供了你学习下面教程所需的功能。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial13.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">getInitialState</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="p">[]};</span>
+  <span class="p">},</span>
+<span class="hll">  <span class="nx">componentDidMount</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class="hll">    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+</span><span class="hll">      <span class="nx">url</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+</span><span class="hll">      <span class="nx">dataType</span><span class="o">:</span> <span class="s1">'json'</span><span class="p">,</span>
+</span><span class="hll">      <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="hll">        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">});</span>
+</span><span class="hll">      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+</span><span class="hll">      <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="hll">        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+</span><span class="hll">      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+</span><span class="hll">    <span class="p">});</span>
+</span><span class="hll">  <span class="p">},</span>
+</span>  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentList</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">}</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentForm</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>在这里，<code>componentDidMount</code>是一个在组件被渲染的时候React自动调用的方法。动态更新的关键点是调用<code>this.setState()</code>。我们把旧的评论数组替换成从服务器拿到的新的数组，然后UI自动更新。正是有了这种响应式，一个小的改变都会触发实时的更新。这里我们将使用简单的轮询，但是你可以简单地使用WebSockets或者其它技术。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial14.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+<span class="hll">  <span class="nx">loadCommentsFromServer</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span>    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+      <span class="nx">url</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+      <span class="nx">dataType</span><span class="o">:</span> <span class="s1">'json'</span><span class="p">,</span>
+      <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">});</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+      <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+    <span class="p">});</span>
+<span class="hll">  <span class="p">},</span>
+</span>  <span class="nx">getInitialState</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="p">[]};</span>
+  <span class="p">},</span>
+  <span class="nx">componentDidMount</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+<span class="hll">    <span class="k">this</span><span class="p">.</span><span class="nx">loadCommentsFromServer</span><span class="p">();</span>
+</span><span class="hll">    <span class="nx">setInterval</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">loadCommentsFromServer</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">pollInterval</span><span class="p">);</span>
+</span>  <span class="p">},</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentList</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">}</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentForm</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">React</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+<span class="hll">  <span class="o">&lt;</span><span class="nx">CommentBox</span> <span class="nx">url</span><span class="o">=</span><span class="s2">"comments.json"</span> <span class="nx">pollInterval</span><span class="o">=</span><span class="p">{</span><span class="mi">2000</span><span class="p">}</span> <span class="o">/&gt;</span><span class="p">,</span>
+</span>  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'content'</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div>
+<p>我们在这里所做的就是把AJAX调用移到一个分离的方法中去，组件第一次加载以及之后每隔两秒钟，调用这个方法。尝试在你的浏览器中运行，然后改变<code>comments.json</code>文件；在两秒钟之内，改变将会显示出来！</p>
+<h3><a class="anchor" name=""></a>添加新的评论 <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>现在是时候构造表单了。我们的<code>CommentForm</code>组件应该询问用户的名字和评论内容，然后发送一个请求到服务器，保存这条评论。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial15.js</span>
+<span class="kd">var</span> <span class="nx">CommentForm</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+<span class="hll">      <span class="o">&lt;</span><span class="nx">form</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentForm"</span><span class="o">&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Your name"</span> <span class="o">/&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Say something..."</span> <span class="o">/&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"submit"</span> <span class="nx">value</span><span class="o">=</span><span class="s2">"Post"</span> <span class="o">/&gt;</span>
+</span><span class="hll">      <span class="o">&lt;</span><span class="err">/form&gt;</span>
+</span>    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>让我们使表单可交互。当用户提交表单的时候，我们应该清空表单，提交一个请求到服务器，然后刷新评论列表。首先，让我们监听表单的提交事件和清空表单。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial16.js</span>
+<span class="kd">var</span> <span class="nx">CommentForm</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+<span class="hll">  <span class="nx">handleSubmit</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="hll">    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span><span class="hll">    <span class="kd">var</span> <span class="nx">author</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">refs</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">getDOMNode</span><span class="p">().</span><span class="nx">value</span><span class="p">.</span><span class="nx">trim</span><span class="p">();</span>
+</span><span class="hll">    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">refs</span><span class="p">.</span><span class="nx">text</span><span class="p">.</span><span class="nx">getDOMNode</span><span class="p">().</span><span class="nx">value</span><span class="p">.</span><span class="nx">trim</span><span class="p">();</span>
+</span><span class="hll">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">text</span> <span class="o">||</span> <span class="o">!</span><span class="nx">author</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="hll">      <span class="k">return</span><span class="p">;</span>
+</span><span class="hll">    <span class="p">}</span>
+</span><span class="hll">    <span class="c1">// TODO: send request to the server</span>
+</span><span class="hll">    <span class="k">this</span><span class="p">.</span><span class="nx">refs</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">getDOMNode</span><span class="p">().</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+</span><span class="hll">    <span class="k">this</span><span class="p">.</span><span class="nx">refs</span><span class="p">.</span><span class="nx">text</span><span class="p">.</span><span class="nx">getDOMNode</span><span class="p">().</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+</span><span class="hll">    <span class="k">return</span><span class="p">;</span>
+</span><span class="hll">  <span class="p">},</span>
+</span>  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+<span class="hll">      <span class="o">&lt;</span><span class="nx">form</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentForm"</span> <span class="nx">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleSubmit</span><span class="p">}</span><span class="o">&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Your name"</span> <span class="nx">ref</span><span class="o">=</span><span class="s2">"author"</span> <span class="o">/&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Say something..."</span> <span class="nx">ref</span><span class="o">=</span><span class="s2">"text"</span> <span class="o">/&gt;</span>
+</span><span class="hll">        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"submit"</span> <span class="nx">value</span><span class="o">=</span><span class="s2">"Post"</span> <span class="o">/&gt;</span>
+</span>      <span class="o">&lt;</span><span class="err">/form&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div><h5><a class="anchor" name=""></a>事件 <a class="hash-link" href="tutorial.html#">#</a></h5>
+<p>React使用驼峰命名规范的方式给组件绑定事件处理器。我们给表单绑定一个<code>onSubmit</code>处理器，用于当表单提交了合法的输入后清空表单字段。</p>
+
+<p>在事件回调中调用<code>preventDefault()</code>来避免浏览器默认地提交表单。</p>
+<h5><a class="anchor" name="refs"></a>Refs <a class="hash-link" href="tutorial.html#refs">#</a></h5>
+<p>我们利用<code>Ref</code>属性给子组件命名，<code>this.refs</code>引用组件。我们可以在组件上调用<code>getDOMNode()</code>获取浏览器本地的DOM元素。</p>
+<h5><a class="anchor" name=""></a>回调函数作为属性 <a class="hash-link" href="tutorial.html#">#</a></h5>
+<p>当用户提交评论的时候，我们需要刷新评论列表来加进这条新评论。在<code>CommentBox</code>中完成所有逻辑是合适的，因为<code>CommentBox</code>拥有代表评论列表的状态（state）。</p>
+
+<p>我们需要从子组件传回数据到它的父组件。我们在父组件的<code>render</code>方法中做这件事：传递一个新的回调函数（<code>handleCommentSubmit</code>）到子组件，绑定它到子组件的<code>onCommentSubmit</code>事件上。无论事件什么时候触发，回调函数都将会被调用：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial17.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">loadCommentsFromServer</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+      <span class="nx">url</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+      <span class="nx">dataType</span><span class="o">:</span> <span class="s1">'json'</span><span class="p">,</span>
+      <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">});</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+      <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+    <span class="p">});</span>
+  <span class="p">},</span>
+<span class="hll">  <span class="nx">handleCommentSubmit</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">comment</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="hll">    <span class="c1">// TODO: submit to the server and refresh the list</span>
+</span><span class="hll">  <span class="p">},</span>
+</span>  <span class="nx">getInitialState</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="p">[]};</span>
+  <span class="p">},</span>
+  <span class="nx">componentDidMount</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">loadCommentsFromServer</span><span class="p">();</span>
+    <span class="nx">setInterval</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">loadCommentsFromServer</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">pollInterval</span><span class="p">);</span>
+  <span class="p">},</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentList</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">}</span> <span class="o">/&gt;</span>
+<span class="hll">        <span class="o">&lt;</span><span class="nx">CommentForm</span> <span class="nx">onCommentSubmit</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleCommentSubmit</span><span class="p">}</span> <span class="o">/&gt;</span>
+</span>      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>当用户提交表单的时候，让我们在<code>CommentForm</code>中调用这个回调函数：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial18.js</span>
+<span class="kd">var</span> <span class="nx">CommentForm</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">handleSubmit</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">author</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">refs</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">getDOMNode</span><span class="p">().</span><span class="nx">value</span><span class="p">.</span><span class="nx">trim</span><span class="p">();</span>
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">refs</span><span class="p">.</span><span class="nx">text</span><span class="p">.</span><span class="nx">getDOMNode</span><span class="p">().</span><span class="nx">value</span><span class="p">.</span><span class="nx">trim</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">text</span> <span class="o">||</span> <span class="o">!</span><span class="nx">author</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="hll">    <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">onCommentSubmit</span><span class="p">({</span><span class="nx">author</span><span class="o">:</span> <span class="nx">author</span><span class="p">,</span> <span class="nx">text</span><span class="o">:</span> <span class="nx">text</span><span class="p">});</span>
+</span>    <span class="k">this</span><span class="p">.</span><span class="nx">refs</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">getDOMNode</span><span class="p">().</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">refs</span><span class="p">.</span><span class="nx">text</span><span class="p">.</span><span class="nx">getDOMNode</span><span class="p">().</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">},</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">form</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentForm"</span> <span class="nx">onSubmit</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleSubmit</span><span class="p">}</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Your name"</span> <span class="nx">ref</span><span class="o">=</span><span class="s2">"author"</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">placeholder</span><span class="o">=</span><span class="s2">"Say something..."</span> <span class="nx">ref</span><span class="o">=</span><span class="s2">"text"</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"submit"</span> <span class="nx">value</span><span class="o">=</span><span class="s2">"Post"</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/form&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>现在回调函数已经就绪，唯一我们需要做的就是提交到服务器，然后刷新列表：</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial19.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">loadCommentsFromServer</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+      <span class="nx">url</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+      <span class="nx">dataType</span><span class="o">:</span> <span class="s1">'json'</span><span class="p">,</span>
+      <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">});</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+      <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+    <span class="p">});</span>
+  <span class="p">},</span>
+  <span class="nx">handleCommentSubmit</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">comment</span><span class="p">)</span> <span class="p">{</span>
+<span class="hll">    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+</span><span class="hll">      <span class="nx">url</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+</span><span class="hll">      <span class="nx">dataType</span><span class="o">:</span> <span class="s1">'json'</span><span class="p">,</span>
+</span><span class="hll">      <span class="nx">type</span><span class="o">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+</span><span class="hll">      <span class="nx">data</span><span class="o">:</span> <span class="nx">comment</span><span class="p">,</span>
+</span><span class="hll">      <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="hll">        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">});</span>
+</span><span class="hll">      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+</span><span class="hll">      <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="hll">        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+</span><span class="hll">      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+</span><span class="hll">    <span class="p">});</span>
+</span>  <span class="p">},</span>
+  <span class="nx">getInitialState</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="p">[]};</span>
+  <span class="p">},</span>
+  <span class="nx">componentDidMount</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">loadCommentsFromServer</span><span class="p">();</span>
+    <span class="nx">setInterval</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">loadCommentsFromServer</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">pollInterval</span><span class="p">);</span>
+  <span class="p">},</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentList</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">}</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentForm</span> <span class="nx">onCommentSubmit</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleCommentSubmit</span><span class="p">}</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div><h3><a class="anchor" name=""></a>优化：提前更新 <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>我们的应用现在已经完成了所有功能，但是在你的评论出现在列表之前，你必须等待请求完成，感觉很慢。我们可以提前添加这条评论到列表中，从而使应用感觉更快。</p>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// tutorial20.js</span>
+<span class="kd">var</span> <span class="nx">CommentBox</span> <span class="o">=</span> <span class="nx">React</span><span class="p">.</span><span class="nx">createClass</span><span class="p">({</span>
+  <span class="nx">loadCommentsFromServer</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+      <span class="nx">url</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+      <span class="nx">dataType</span><span class="o">:</span> <span class="s1">'json'</span><span class="p">,</span>
+      <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">});</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+      <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+    <span class="p">});</span>
+  <span class="p">},</span>
+  <span class="nx">handleCommentSubmit</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">comment</span><span class="p">)</span> <span class="p">{</span>
+<span class="hll">    <span class="kd">var</span> <span class="nx">comments</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">;</span>
+</span><span class="hll">    <span class="kd">var</span> <span class="nx">newComments</span> <span class="o">=</span> <span class="nx">comments</span><span class="p">.</span><span class="nx">concat</span><span class="p">([</span><span class="nx">comment</span><span class="p">]);</span>
+</span><span class="hll">    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">newComments</span><span class="p">});</span>
+</span>    <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+      <span class="nx">url</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span>
+      <span class="nx">dataType</span><span class="o">:</span> <span class="s1">'json'</span><span class="p">,</span>
+      <span class="nx">type</span><span class="o">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+      <span class="nx">data</span><span class="o">:</span> <span class="nx">comment</span><span class="p">,</span>
+      <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="nx">data</span><span class="o">:</span> <span class="nx">data</span><span class="p">});</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+      <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span>
+      <span class="p">}.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+    <span class="p">});</span>
+  <span class="p">},</span>
+  <span class="nx">getInitialState</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span><span class="nx">data</span><span class="o">:</span> <span class="p">[]};</span>
+  <span class="p">},</span>
+  <span class="nx">componentDidMount</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">loadCommentsFromServer</span><span class="p">();</span>
+    <span class="nx">setInterval</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">loadCommentsFromServer</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">pollInterval</span><span class="p">);</span>
+  <span class="p">},</span>
+  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="s2">"commentBox"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Comments</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentList</span> <span class="nx">data</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">data</span><span class="p">}</span> <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">CommentForm</span> <span class="nx">onCommentSubmit</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleCommentSubmit</span><span class="p">}</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+    <span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div><h3><a class="anchor" name=""></a>祝贺你! <a class="hash-link" href="tutorial.html#">#</a></h3>
+<p>你刚刚通过一些简单步骤够早了一个评论框。了解更多关于<a href="why-react.html">为什么使用React</a>的内容，或者深入学习<a href="top-level-api.html">API参考</a>，开始专研！祝你好运！</p>
+
+
+    <div class="docs-prevnext">
+      
+        <a class="docs-prev" href="getting-started.html">← 上一条</a>
+      
+      
+        <a class="docs-next" href="thinking-in-react.html">下一条 →</a>
+      
+    </div>
+  </div>
+</section>
+
+
+    <footer class="wrap">
+      <div class="left">
+        A Facebook &amp; Instagram collaboration.<br>
+        <a href="acknowledgements.html">Acknowledgements</a>
+      </div>
+      <div class="right">
+        © 2013–2015 Facebook Inc.<br>
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </div>
+    </footer>
+  </div>
+  <div id="fb-root"></div>
+
+
+
+</body></html>

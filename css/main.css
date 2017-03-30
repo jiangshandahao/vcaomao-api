@@ -1,0 +1,152 @@
+a{color:#3b9adb;}
+@media(min-width: 768px){
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+#navbar-example{
+  background: white;
+}
+
+.projects{padding-top: 60px;}
+.page-header {
+  margin-top: 0px;
+}
+.projects-header p{text-transform: capitalize;}
+.projects .logo{text-align: center;}
+.projects .logo img{
+  width: 100%; 
+}
+.projects .title{
+  margin: 10px 5px; 
+  font-size: 18px;
+}
+.projects .intro{
+  margin:10px 5px;
+  height: 100px; overflow: hidden; 
+}
+.projects .thumbnail{
+  position: relative; top:0px;  padding-bottom: 36px;transition:all 0.3s;
+  cursor: pointer;
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+}
+.projects .thumbnail:hover{
+  top:-2px;
+  box-shadow: 0px 2px 5px #ddd; 
+}
+
+.projects .thumbnail .zhezhao{
+  width:100%; height:100%; position: absolute; top:0;left:0; display: block;
+}
+
+.projects .btn{
+  width:40%;
+  padding: 6px 26px; 
+  color:white; 
+  border:1px solid #fff;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  position: absolute;
+  bottom: 10px; 
+}
+.projects .btn1{
+  left:20px;
+  background: #3b9adb;
+}
+.projects .btn2{
+  background: #eb655e;
+  right:20px;
+  outline: none;
+}
+.projects .btn1:hover{
+  border:1px solid #3b9adb;
+  background:white; 
+  color:#3b9adb; 
+}
+.projects .btn2:hover{
+  border:1px solid #eb655e;
+  background:white; 
+  color:#eb655e; 
+
+}
+
+
+/* Show and affix the side nav when space allows it */
+.bs-docs-sidebar .nav > .active > ul {
+  display: block;
+}
+
+.bs-docs-sidebar.affix {
+  position: fixed; /* Undo the static from mobile first approach */
+  top: 36px; padding: 20px 0px;
+}
+#laffix{left:0px; }
+#raffix{right:0px; }
+.bs-docs-sidebar.affix li{
+  border-bottom: 1px solid #eee;
+}
+.bs-docs-sidebar.affix a{
+  color: #333;
+}
+
+.bs-docs-sidebar.affix-bottom {
+  position: absolute; /* Undo the static from mobile first approach */
+}
+.bs-docs-sidebar.affix-bottom .bs-docs-sidenav,
+.bs-docs-sidebar.affix .bs-docs-sidenav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Widen the fixed sidebar */
+.bs-docs-sidebar.affix,
+.bs-docs-sidebar.affix-bottom {
+  width: 36px; /* border-right: 1px solid #eee; */
+  background: white;
+}
+.bs-docs-sidebar .nav>.active:focus>a, .bs-docs-sidebar .nav>.active:hover>a, .bs-docs-sidebar .nav>.active>a {
+    font-weight: 700;
+    color: #563d7c;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #563d7c;
+}
+
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages, save the homepage.
+ */
+
+.bs-docs-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  color: #99979c;
+  text-align: center;
+  background-color: #2a2730;
+}
+.bs-docs-footer a {
+  color: #fff;
+}
+.bs-docs-footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.bs-docs-footer-links li {
+  display: inline-block;
+}
+.bs-docs-footer-links li + li {
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .bs-docs-footer {
+    text-align: left;
+  }
+  .bs-docs-footer p {
+    margin-bottom: 0;
+  }
+}
