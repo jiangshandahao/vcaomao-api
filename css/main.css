@@ -1,3 +1,4 @@
+body{font-family: "Microsoft Yahei";}
 a{color:#3b9adb;}
 @media(min-width: 768px){
   .container {
@@ -149,4 +150,20 @@ a{color:#3b9adb;}
   .bs-docs-footer p {
     margin-bottom: 0;
   }
+}
+
+.modal-dialog{
+  width: 300px;
+}
+.modal-dialog span{
+  /*color:#3b9adb;*/
+  color:#eb655e;
+  font-weight: bold;
+}
+.modal-dialog h4{
+  font-weight: bold;
+  padding: 0px 20px 6px !important; 
+}
+.modal-dialog h5{
+  padding: 0px 20px !important; 
 }
